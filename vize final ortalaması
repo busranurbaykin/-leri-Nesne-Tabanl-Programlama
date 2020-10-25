@@ -1,0 +1,40 @@
+using System;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+       private static void vizefinalort()
+        {
+            double vize, final, ort;
+
+            Console.Write("Vize Notunuzu Giriniz: ");
+            vize = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Final Notunuzu Giriniz: ");
+            final = Convert.ToDouble(Console.ReadLine());
+
+            ort = Convert.ToDouble(Console.ReadLine());
+
+            ort = vize*40/100 + final*60/100;
+
+            if (ort >= 50)
+            {
+                Console.WriteLine("Dersten Geçtiniz, Tebrikler.");
+            }
+            else
+            {
+                Console.WriteLine("Dersten Kaldınız, Üzgünüz.");
+            }
+           
+        }
+
+        static void Main(string[] args)
+        {
+            vizefinalort();
+            Console.ReadKey();
+        }
+
+
+    }
+}
