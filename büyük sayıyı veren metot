@@ -1,0 +1,36 @@
+using System;
+
+namespace buyuksayikucuksayi
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Buyuksayi();
+            Console.ReadKey();
+        }
+
+        private static void Buyuksayi()
+        {
+            Console.Write("birincisayi: ");
+            int x = Convert.ToInt32(Console.ReadLine());
+            Console.Write("ikincisayi: ");
+            int y = Convert.ToInt32(Console.ReadLine());
+            if (x > y)
+            {
+                Console.Write("Büyüksayı: " + x);
+            }
+
+            else if (y > x)
+            {
+                Console.Write("Büyüksayı: " + y);
+            }
+
+            else
+            {
+                Console.Write("Sayılar eşittir");
+            }
+
+        }
+    }
+}
