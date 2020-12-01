@@ -1,0 +1,37 @@
+using System;
+
+namespace ConsoleApp1
+{
+        
+        class Dikdörtgen
+    {
+        public int kısakenar = 35;
+        public int uzunkenar = 70;
+        public int alanhesapla(int a, int b)
+        {
+            return a * b;
+        }
+        public int cevrehesapla(int a, int b)
+        {
+            return a + a + b + b;
+
+        }
+
+    }
+
+    class Ödev1
+    {
+        static void Main()
+        {
+            Dikdörtgen nesne1 = new Dikdörtgen();
+            Console.WriteLine("kısa kenar: " + nesne1.kısakenar);
+            Console.WriteLine("uzun kenar: " + nesne1.uzunkenar);
+
+
+            Dikdörtgen nesne2 = new Dikdörtgen();
+            Console.WriteLine("alan: " + nesne1.alanhesapla(35, 70));
+            Console.WriteLine("cevre: " + nesne1.cevrehesapla(35, 70));
+
+        }
+    }
+    }
