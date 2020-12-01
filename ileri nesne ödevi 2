@@ -1,0 +1,42 @@
+using System;
+
+namespace ConsoleApp1
+{class Musteri
+    {
+        static string ad = "büşra";
+        static string soyad = "baykın";
+        static int ogr_no = 221903037;
+        static int yas = 22;
+
+
+
+        static void Main()
+        {
+
+            Console.WriteLine(ad);
+            Console.WriteLine(soyad);
+            Console.WriteLine(ogr_no);
+            Console.WriteLine(yas);
+
+        }
+
+
+    }
+
+    class Metotlar
+    {
+        static void Metot1(int x, int y)
+        {
+            Console.WriteLine("1. metot döndü" + x * y);
+        }
+        static void Metot1(int x, int y, int z)
+        {
+            Console.WriteLine("2. metot döndü" + x * y * z);
+        }
+
+        static void Main()
+        {
+            Metot1(7, 2);
+            Metot1(5, 3, 4);
+        }
+    }
